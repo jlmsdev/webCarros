@@ -82,8 +82,12 @@ export function Login() {
 
                 </form>
 
-                <Link to='/register' className='italic font-medium underline'>
+                <Link to='/register' className='italic font-medium'>
                     Não possui uma conta ? Cadastre-se
+                </Link>
+
+                <Link to='/' className='italic font-medium border border-slate-700 rounded-md py-1 px-3 hover:bg-slate-500 hover:text-white hover:border-0 transition-all'>
+                    Veja os Anunciados
                 </Link>
             </div>
         </Container>
