@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import { Container } from "../../components/container";
 import { FaWhatsapp } from 'react-icons/fa';
+import { IoArrowBackCircleOutline } from "react-icons/io5";
+
 import {
     getDoc,
     doc
@@ -97,7 +99,11 @@ export function CarDetail() {
 
     return(
         <Container>
-            
+            <Link to='/' className="flex items-center mb-4">
+                <IoArrowBackCircleOutline  size={40} color="#000"
+                />
+                <span className="ml-2 font-medium">Voltar</span>
+            </Link>
             {car && (
                 <Swiper
                     slidesPerView={sliderPerView}
